@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="clau.a391.Multiplicativa"
+    android:orientation="vertical"
+    android:layout_margin="30dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONGRUENCIAL MULTIPLICATIVA"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#010254"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingrese constante:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#010254"/>
+        <EditText
+            android:id="@+id/EdtCongruencialMultiplicativoConstante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingrese modulo:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#010254"/>
+        <EditText
+            android:id="@+id/EdtCongruencialMultiplicativaModulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingrese Semilla :"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#010254"/>
+        <EditText
+            android:id="@+id/EdtCongruencialMultiplicativaSemilla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/BtnCongruencialMultiplicativoGenerar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Generar"
+            android:background="@drawable/forma"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/BtnCongruencialMultiplicativoLimpiar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:background="@drawable/forma"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="left">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/TxtCongruencialMultiplicativaResultado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                />
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
